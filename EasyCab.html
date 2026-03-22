@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EasyCab.css">
+    <title>Easy Cab</title>
+</head>
+<body>
+    <nav class="nvbar">
+        <div class="Logo">
+            <h3 id="easy">Easy<span>Cab</span></h3>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#services-section">Services</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+            <li><button onclick="gotonextpage()" class="auth"><span>Book now</span></button></li>
+        </ul>
+    </nav>
+    
+<!-- description section -->
+    <section class="description-section">
+        <div class="desc-content">
+            <div class="desc">
+                <p class="desc-label">Reach your destination safely and quickly</p>
+                <p id="usr-location">Jorhat, IN <a href="location.html">Baruah Chariali</a></p>
+                <h1>Book your <br>first</br> <em>Ride</em> today!</h1>
+            </div>
+            <div class="pickup-drop">
+                <input type="text" placeholder="Pickup location">
+                <input type="text" placeholder="Drop location" >
+            </div>
+        </div>
+        <div class="img1">
+            <img src="Gemini_Generated_Image_hgyr39hgyr39hgyr.png" alt="Cab Image">
+        </div>
+    </section>
+
+<!-- about section
+    <section id="about-section">
+        <p>EasyCab helps you book reliable city rides, airport drops, and outstation trips in minutes.</p>
+    </section> -->
+
+<!-- services section -->
+    <section id="services-section">
+        <p class="service-label">Services</p>
+        <div class="service-grid">
+            <div class="service-card">
+                <div class="service-card-bg"></div>
+                <div class="service-card-label">
+                    <h3>City Rides</h3>
+                    <p>Affordable rides within the city.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-card-bg"></div>
+                <div class="service-card-label">
+                    <h3>Airport Transfers</h3>
+                    <p>Reliable transportation to and from the airport.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-card-bg"></div>
+                <div class="service-card-label">
+                    <h3>Outstation Trips</h3>
+                    <p>Comfortable rides for long-distance travel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- contact us -->
+    <section id="contact-section">
+        <div class="contact-info">
+            <div class="font-style">
+                <h2 class="contact-label">Contact Us</h2>
+                <p id="contact-label">Contact us for more assistance.</p>
+            </div>
+        
+            <form class="contact-form">
+                <div  class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" placeholder="Rajiv Khanna">
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" placeholder="rajiv@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" placeholder="Enter your message"></textarea>
+                </div>
+                <!-- <div>
+                    <p>Phone: <a href="tel:+91600176961">+91 60017 6961</a></p>
+                </div> -->
+                <button type="submit" class="send-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+<!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 <span>EasyCab</span>. Neeraj Bharali's creation.</p>
+    </footer>
+
+    <script>
+        function gotonextpage() {
+            window.location.href = "login.html";
+        }
+
+        const navbar = document.querySelector(".nvbar");
+        window.addEventListener("scroll", function () {
+            navbar.classList.toggle("scrolled", window.scrollY > 8);
+        });
+    </script>
+</body>
+</html>
